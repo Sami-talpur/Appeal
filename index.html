@@ -5,81 +5,94 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Account Disabled</title>
     <style>
+        /* General styles */
         body {
-            font-family: Arial, sans-serif;
-            background-color: #f9f9f9;
+            font-family: 'Roboto', Arial, sans-serif;
+            background-color: #f2f3f5;
             margin: 0;
             padding: 0;
             display: flex;
             justify-content: center;
             align-items: center;
-            height: 100vh;
+            min-height: 100vh;
+            color: #4b4f56;
         }
+
+        /* Card container */
         .container {
-            background-color: white;
-            border: 1px solid #ddd;
-            border-radius: 8px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            width: 360px;
             padding: 20px;
-            max-width: 400px;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-        }
-        .header {
-            display: flex;
-            align-items: center;
-            margin-bottom: 20px;
-        }
-        .header img {
-            height: 24px;
-            margin-right: 8px;
-        }
-        .header h1 {
-            font-size: 20px;
-            margin: 0;
-        }
-        .content {
-            font-size: 14px;
-            color: #333;
-            margin-bottom: 20px;
-        }
-        .content p {
-            margin: 10px 0;
-        }
-        .warning {
-            background-color: #fff4e5;
-            border: 1px solid #ffcc80;
-            padding: 10px;
-            border-radius: 4px;
-            margin-bottom: 20px;
-            font-size: 14px;
-            color: #6a3e05;
-        }
-        .button {
-            display: flex;
-            justify-content: center;
-        }
-        .button a {
-            background-color: #1877f2;
-            color: white;
-            padding: 10px 20px;
-            border: none;
-            border-radius: 4px;
-            text-decoration: none;
-            font-size: 14px;
-            font-weight: bold;
             text-align: center;
         }
+
+        /* Header section */
+        .header img {
+            height: 40px;
+            margin-bottom: 15px;
+        }
+
+        .header h1 {
+            font-size: 22px;
+            font-weight: 600;
+            margin: 0 0 15px;
+            color: #1c1e21;
+        }
+
+        /* Warning message */
+        .warning {
+            background-color: #fff4e5;
+            border: 1px solid #ffd8b2;
+            border-radius: 5px;
+            padding: 15px;
+            font-size: 14px;
+            color: #d9831f;
+            margin-bottom: 20px;
+            text-align: left;
+        }
+
+        /* Text section */
+        .content p {
+            font-size: 14px;
+            line-height: 1.6;
+            margin: 10px 0;
+        }
+
+        /* Buttons */
+        .button {
+            margin: 20px 0;
+        }
+
+        .button a {
+            display: inline-block;
+            text-decoration: none;
+            background-color: #1877f2;
+            color: #fff;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-size: 16px;
+            font-weight: bold;
+            box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+            transition: background-color 0.3s ease;
+        }
+
         .button a:hover {
             background-color: #145dbf;
         }
+
+        /* Link for data */
         .data-link {
             font-size: 14px;
-            text-align: center;
             margin-top: 10px;
         }
+
         .data-link a {
             color: #1877f2;
             text-decoration: none;
         }
+
         .data-link a:hover {
             text-decoration: underline;
         }
@@ -87,22 +100,31 @@
 </head>
 <body>
     <div class="container">
+        <!-- Header -->
         <div class="header">
             <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="Facebook Logo">
             <h1>Account Disabled</h1>
         </div>
-        <div class="content">
-            <div class="warning">
-                <p>It looks like this account was created or used with multiple other accounts to violate Facebook's policies. The account might have been created by a computer program or bot. To learn more, go to <a href="https://facebook.com/help" target="_blank">facebook.com/help</a>.</p>
-            </div>
-            <p>This account became unavailable on <b>Nov 24, 2024</b>. Starting on <b>Oct 20, 2025</b>, this account will be considered for deletion.</p>
-            <p>If you think your account was disabled by mistake, submit an appeal as soon as possible.</p>
+
+        <!-- Warning Message -->
+        <div class="warning">
+            It looks like this account was created or used with multiple other accounts to violate Facebook's policies. The account might have been created by a computer program or bot. To learn more, go to <a href="https://facebook.com/help" target="_blank">facebook.com/help</a>.
         </div>
+
+        <!-- Main Content -->
+        <div class="content">
+            <p>Your account became unavailable on <b>November 24, 2024</b>. Starting on <b>October 20, 2025</b>, this account will be considered for deletion.</p>
+            <p>If you think this was a mistake, you can submit an appeal as soon as possible.</p>
+        </div>
+
+        <!-- Action Buttons -->
         <div class="button">
             <a href="#appeal">Start Appeal</a>
         </div>
+        
+        <!-- Data Download Link -->
         <div class="data-link">
-            <p>You can also <a href="#download">download your data</a> from some Facebook services.</p>
+            <p>Need your information? <a href="#download">Download your data</a>.</p>
         </div>
     </div>
 </body>
