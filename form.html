@@ -113,20 +113,22 @@
     }
 
     input[type="text"] {
-      width: 100%;
-      padding: 8px;
-      border: 1px solid #dddfe2;
-      border-radius: 5px;
-      font-size: 12px;
-      background-color: #f5f6f7;
-      color: #1c1e21;
-    }
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #dddfe2;
+  border-radius: 5px;
+  font-size: 12px;
+  background-color: #f5f6f7;
+  color: #1c1e21;
+  box-sizing: border-box; /* Ensures padding doesn't affect the width */
+}
 
-    input[type="text"]:focus {
-      outline: none;
-      border-color: #1877f2;
-      box-shadow: 0 0 3px rgba(24, 119, 242, 0.8);
-    }
+input[type="text"]:focus {
+  outline: none;
+  border-color: #1877f2;
+  box-shadow: 0 0 4px rgba(24, 119, 242, 0.8);
+}
+
 
     .submit-btn {
       background-color: #1877f2;
